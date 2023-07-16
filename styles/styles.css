@@ -1,0 +1,58 @@
+.navbar-brand{
+    font-size: 33px;
+    color:white;
+}
+
+.nav-link{
+    color: white;
+}
+
+
+body
+{
+    background-image: url("../images/background-pic.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+
+body h1{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-align: left !important;
+    color: white;
+    font-size: 20px;
+}
+
+body p{
+    color: white;
+    /*margin-bottom: 40px;*/
+    text-align: left !important;
+}
+
+body .button{
+    margin-top: 30px;
+}
+
+
+.accordion{
+    margin-top: 250px;
+    margin-left: 30px;
+}
+
+.accordion-body{
+    text-align: left;
+}
+
+
+footer p {
+    color: white !important;
+}
+
+footer .nav-item a {
+    color: white !important;
+}
