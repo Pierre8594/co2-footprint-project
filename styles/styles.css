@@ -14,9 +14,7 @@ body
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    min-height: 100vh !important;
-    display: flex !important;
-    flex-direction: column !important;
+
 }
 
 
@@ -28,15 +26,115 @@ body h1{
     font-size: 20px;
 }
 
+#pheaderT{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: left !important;
+    color: white;
+    font-size: 20px;
+}
+
+#textFeld{
+    resize: none;
+    height: 150px;
+}
+
+#impressumHead{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left !important;
+    color: white;
+}
+
+#impressumText{
+    text-align: left !important;
+    color: white;
+    font-size: 15px;
+}
+
+#pfontT{
+    color: white;
+    /*margin-bottom: 40px;*/
+    text-align: left !important;
+}
 body p{
     color: white;
     /*margin-bottom: 40px;*/
     text-align: left !important;
 }
 
-body .button{
-    margin-top: 30px;
+
+
+#wbutt{
+    margin-top: 50px;
 }
+
+#co2tab{
+    margin-top: 20px;
+}
+
+#ueberS{
+    background: transparent;
+    color: white;
+}
+
+
+
+#ueberD{
+    background: transparent;
+    color: white;
+}
+
+#searchField{
+    background: transparent;
+    color: white;
+}
+
+#searchField1{
+    background: transparent;
+    color: white;
+}
+
+#searchField2{
+    background: transparent;
+    color: white;
+}
+
+#searchField3{
+    background: transparent;
+    color: white;
+}
+
+#searchField4{
+    background: transparent;
+    color: white;
+}
+
+#searchField5{
+    background: transparent;
+    color: white;
+}
+
+#searchField6{
+    background: transparent;
+    color: white;
+}
+
+#searchField7{
+    background: transparent;
+    color: white;
+}
+
+#searchField8{
+    background: transparent;
+    color: white;
+}
+
+#searchField9{
+    background: transparent;
+    color: white;
+}
+
 
 
 .accordion{
@@ -49,7 +147,7 @@ body .button{
 }
 
 
-footer p {
+.footer p {
     color: white !important;
 }
 
