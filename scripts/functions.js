@@ -135,27 +135,22 @@ const changeMenuPosition = () => {
                 break;
         }
 
-        /*switch(langSub){
-            case 'ar' : navPos.setAttribute('id','NavRight');break;
-            case 'arc': navPos.setAttribute('id','NavRight');break;
-            case 'dv' : navPos.setAttribute('id','NavRight');break;
-            case 'fa' : navPos.setAttribute('id','NavRight');break;
-            case 'ha' : navPos.setAttribute('id','NavRight');break;
-            case 'he' : navPos.setAttribute('id','NavRight');break;
-            case 'khw': navPos.setAttribute('id','NavRight');break;
-            case 'ks' : navPos.setAttribute('id','NavRight');break;
-            case 'ku' : navPos.setAttribute('id','NavRight');break;
-            case 'ps' : navPos.setAttribute('id','NavRight');break;
-            case 'ur' : navPos.setAttribute('id','NavRight');break;
-            case 'yi' : navPos.setAttribute('id','NavRight');break;
-            default   : navPos.setAttribute('id','NavLeft');break;
-        }*/
-
-        //lang.startsWith('ar') === true ? navPos.setAttribute('id','NavRight') : navPos.setAttribute('id','NavLeft');
-        //let textelement = document.getElementById('text');
-        //textelement.innerText = lang;
-        //element.setAttribute('id','NavRight');
-        //let loc = navigator.geolocation.getCurrentPosition();
     }
+}
+
+const selectSalutation = selSal => {
+
+    let textIn = document.getElementById('textIn');
+
+    textIn.innerText = '';
+
+   if(selSal === 'Männlich'){
+       textIn.value = 'Herr';
+   }else if(selSal === 'Weiblich'){
+       textIn.value = 'Frau';
+   }else if(selSal === 'Keine Angabe'){
+       textIn.value = 'k.A.';
+   }
+
 }
 window.addEventListener('load', changeMenuPosition);

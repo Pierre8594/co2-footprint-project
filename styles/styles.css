@@ -17,6 +17,59 @@ body
 
 }
 
+#spFN{
+    width: 150px;
+}
+
+#spNN{
+    width: 150px;
+}
+
+#spS{
+    width: 150px;
+}
+
+#spHNR{
+    width: 150px;
+}
+
+#spO{
+    width: 150px;
+}
+
+#spPLZ{
+    width: 150px;
+}
+
+#spE{
+    width: 150px;
+}
+
+#inpFN{
+    margin-bottom: 10px;
+}
+
+#inpNN{
+    margin-bottom: 10px;
+}
+
+#inpS{
+    margin-bottom: 10px;
+}
+
+#inpHNR{
+    margin-bottom: 10px;
+}
+
+#inpO{
+    margin-bottom: 10px;
+}
+
+#inpPLZ{
+    margin-bottom: 10px;
+}
+
+
 #ue1{
     width: 600px;
     height: 500px;
@@ -91,6 +144,11 @@ body p{
 
 #wbutt{
     margin-top: 50px;
+}
+
+#kbutt{
+    margin-top: 15px;
+    margin-left: 530px;
 }
 
 #co2tab{
