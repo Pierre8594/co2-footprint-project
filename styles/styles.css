@@ -17,6 +17,23 @@ body
 
 }
 
+#ue1{
+    width: 600px;
+    height: 500px;
+    margin-right: 25px;
+}
+
+#ue2{
+    width: 600px;
+    height: 500px;
+
+}
+
+#ue3{
+    width: 500px;
+    height: 500px;
+}
+
 #NavLeft{
     text-align: left;
 }
