@@ -1,4 +1,4 @@
-function filterTable() {
+const filterTable = () => {
 
     try {
         let input1 = document.getElementById("searchField1");
@@ -75,3 +75,16 @@ function filterTable() {
         console.log('Funktion erfolgreich ausgeführt');
     }
 }
+
+
+const changeMenuPosition = () =>{
+    let lang = navigator.language;
+    let navPos = document.getElementById('NavLeft');
+    lang.startsWith('ar') === true ? navPos.setAttribute('id','NavRight') : navPos.setAttribute('id','NavLeft');
+    //let textelement = document.getElementById('text');
+    //textelement.innerText = lang;
+    //element.setAttribute('id','NavRight');
+    //let loc = navigator.geolocation.getCurrentPosition();
+}
+
+window.addEventListener('load', changeMenuPosition);

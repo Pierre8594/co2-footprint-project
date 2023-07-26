@@ -17,6 +17,13 @@ body
 
 }
 
+#NavLeft{
+    text-align: left;
+}
+
+#NavRight{
+    text-align: right;
+}
 
 body h1{
     margin-top: 100px;
