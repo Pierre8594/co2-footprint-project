@@ -77,14 +77,85 @@ const filterTable = () => {
 }
 
 
-const changeMenuPosition = () =>{
+const changeMenuPosition = () => {
     let lang = navigator.language;
+    //let langSub = lang.substring(0,2);
     let navPos = document.getElementById('NavLeft');
-    lang.startsWith('ar') === true ? navPos.setAttribute('id','NavRight') : navPos.setAttribute('id','NavLeft');
-    //let textelement = document.getElementById('text');
-    //textelement.innerText = lang;
-    //element.setAttribute('id','NavRight');
-    //let loc = navigator.geolocation.getCurrentPosition();
-}
 
+    if (lang.length === 5 || lang.length <= 2) {
+        let langSub = lang.substring(0,2);
+
+        switch (langSub) {
+            case 'ar' :
+                navPos.setAttribute('id', 'NavRight');
+                break;
+            case 'dv' :
+                navPos.setAttribute('id', 'NavRight');
+                break;
+            case 'fa' :
+                navPos.setAttribute('id', 'NavRight');
+                break;
+            case 'ha' :
+                navPos.setAttribute('id', 'NavRight');
+                break;
+            case 'he' :
+                navPos.setAttribute('id', 'NavRight');
+                break;
+            case 'ks' :
+                navPos.setAttribute('id', 'NavRight');
+                break;
+            case 'ku' :
+                navPos.setAttribute('id', 'NavRight');
+                break;
+            case 'ps' :
+                navPos.setAttribute('id', 'NavRight');
+                break;
+            case 'ur' :
+                navPos.setAttribute('id', 'NavRight');
+                break;
+            case 'yi' :
+                navPos.setAttribute('id', 'NavRight');
+                break;
+            default   :
+                navPos.setAttribute('id', 'NavLeft');
+                break;
+        }
+    } else if (lang.length >= 6 || lang.length === 3) {
+        let langSub = lang.substring(0,3);
+        switch (langSub) {
+
+            case 'arc':
+                navPos.setAttribute('id', 'NavRight');
+                break;
+            case 'khw':
+                navPos.setAttribute('id', 'NavRight');
+                break;
+            default   :
+                navPos.setAttribute('id', 'NavLeft');
+                break;
+        }
+
+        /*switch(langSub){
+            case 'ar' : navPos.setAttribute('id','NavRight');break;
+            case 'arc': navPos.setAttribute('id','NavRight');break;
+            case 'dv' : navPos.setAttribute('id','NavRight');break;
+            case 'fa' : navPos.setAttribute('id','NavRight');break;
+            case 'ha' : navPos.setAttribute('id','NavRight');break;
+            case 'he' : navPos.setAttribute('id','NavRight');break;
+            case 'khw': navPos.setAttribute('id','NavRight');break;
+            case 'ks' : navPos.setAttribute('id','NavRight');break;
+            case 'ku' : navPos.setAttribute('id','NavRight');break;
+            case 'ps' : navPos.setAttribute('id','NavRight');break;
+            case 'ur' : navPos.setAttribute('id','NavRight');break;
+            case 'yi' : navPos.setAttribute('id','NavRight');break;
+            default   : navPos.setAttribute('id','NavLeft');break;
+        }*/
+
+        //lang.startsWith('ar') === true ? navPos.setAttribute('id','NavRight') : navPos.setAttribute('id','NavLeft');
+        //let textelement = document.getElementById('text');
+        //textelement.innerText = lang;
+        //element.setAttribute('id','NavRight');
+        //let loc = navigator.geolocation.getCurrentPosition();
+    }
+}
 window.addEventListener('load', changeMenuPosition);
